@@ -4,3 +4,7 @@
 * 暂时不支持4G作为桥接功能，只是作为一个路由器，局域网内传输数据
 * 可以获取客户端的mac地址列表功能
 
+
+运行该qt应用程序所需要的条件是：  
+* temp文件夹所包含的文件有：hostapd_cli.conf  hostapd.conf  udhcpd.conf，需要把这些文件放到linux文件系统的/etc目录下
+* 需要移植hostapd,hostapd_cli命令，需要移植libnl.so.1库文件
